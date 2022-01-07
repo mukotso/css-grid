@@ -4,12 +4,23 @@ body          {
   padding-bottom: 30px;
   padding-top: 30px;
 }
-
+h2{
+  margin-left: 20px;
+}
 .calculator   {
   max-width: 600px;
   margin: 0 auto;
-  border: 2px solid rgba(136, 250, 5, 0.007);
+  border: 2px solid black;
   border-radius: 5px;
+  justify-content: center;
+  align-content: center;
+}
+
+.calculator-buttons {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
 }
 
 .calc-button  {
@@ -19,7 +30,13 @@ body          {
   color: #EEE; 
   border-radius: 5px; 
   font-size: 22px; 
-  cursor: pointer; 
+
+}
+.calc-button:hover{
+  margin:5px;
+  background-color: burlywood;
+  color:black;
+  transition: all 3ms;
 }
 
 input   {
@@ -30,12 +47,7 @@ input   {
   grid-column: span 4;
 }
 
-.calculator-buttons {
-  padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 15px;
-}
+
 
 .zero,
 .clear   {
